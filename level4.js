@@ -15,8 +15,12 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 window.checkPassword = async function() {
+    console.log("Button gedrückt");
+    
     const eingabe = document.getElementById("password").value;
 
+    console.log("Eingabe:", eingabe);
+    
     const level4 = doc(db, "levels", "level4");
 
     const daten = await getDoc(level4);
