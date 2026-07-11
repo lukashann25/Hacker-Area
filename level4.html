@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>Hacker-Area - Level 4</title>
-    <link rel?="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Area - Level 4</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Level 4</h1>
+    <h1>Level 4</h1>
 
-<p>Finde das Passwort, das auf dem Server gespeichert ist.</p>
+    <p>Gib das richtige Passwort ein.</p>
 
-<input id="password" placeholder="Passwort eingeben">
+    <input
+        type="password"
+        id="password"
+        placeholder="Passwort">
 
-<button olclick="checkPassword()">Prüfen</button>
+    <button onclick="checkPassword()">
+        Prüfen
+    </button>
 
-<p id="reult"></p>
+    <p id="result"></p>
 
-<script type="module" src="level4.js"></script>
-    
+    <script type="module" src="level4.js"></script>
+
 </body>
 </html>
